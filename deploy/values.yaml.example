@@ -3,23 +3,26 @@ global:
   # edit here if you changed it in create_certs.sh and wants to use another domain
   domain: rds.local 
 circle1-port-owncloud:
+  enabled: false
   environment:
     # needs to be adjusted to correct values
-    OWNCLOUD_INSTALLATION_URL: https://owncloud.local/owncloud
-    OWNCLOUD_OAUTH_CLIENT_ID: ABC
-    OWNCLOUD_OAUTH_CLIENT_SECRET: XYZ
+    ADDRESS: https://owncloud.local/owncloud
+    OAUTH_CLIENT_ID: ABC
+    OAUTH_CLIENT_SECRET: XYZ
 circle1-port-zenodo:
+  enabled: false
   environment:
     # needs to be adjusted to correct values
-    ZENODO_ADDRESS: https://sandbox.zenodo.org
-    ZENODO_OAUTH_CLIENT_ID: ABC
-    ZENODO_OAUTH_CLIENT_SECRET: XYZ
+    ADDRESS: https://sandbox.zenodo.org
+    OAUTH_CLIENT_ID: ABC
+    OAUTH_CLIENT_SECRET: XYZ
 circle1-port-openscienceframework:
+  enabled: false
   environment:
-    OPENSCIENCEFRAMEWORK_ADDRESS: https://accounts.test.osf.io
-    OPENSCIENCEFRAMEWORK_API_ADDRESS: https://api.test.osf.io/v2
-    OPENSCIENCEFRAMEWORK_OAUTH_CLIENT_ID: ABC
-    OPENSCIENCEFRAMEWORK_OAUTH_CLIENT_SECRET: XYZ
+    ADDRESS: https://accounts.test.osf.io
+    API_ADDRESS: https://api.test.osf.io/v2
+    OAUTH_CLIENT_ID: ABC
+    OAUTH_CLIENT_SECRET: XYZ
 circle2-exporter-service: {}
 circle2-port-service: {}
 circle2-metadata-service: {}
