@@ -21,6 +21,7 @@ circle1-port-openscienceframework:
   environment:
     ADDRESS: https://accounts.test.osf.io
     API_ADDRESS: https://api.test.osf.io/v2
+    # needs to be adjusted to correct values
     OAUTH_CLIENT_ID: ABC
     OAUTH_CLIENT_SECRET: XYZ
 circle2-exporter-service: {}
