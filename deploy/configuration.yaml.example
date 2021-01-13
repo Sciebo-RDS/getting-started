@@ -19,7 +19,7 @@ metadata:
 data:
   HTTP_PROXY: ""
   HTTPS_PROXY: ""
-  NO_PROXY: circle1-port-owncloud,circle1-port-zenodo,circle1-port-openscienceframework,circle1-port-datasafe,circle2-port-service,circle3-token-storage,circle3-research-manager
+  NO_PROXY: circle1-port-owncloud,circle1-port-zenodo,circle1-port-openscienceframework,circle1-port-datasafe,circle1-port-reva,circle2-port-service,circle3-token-storage,circle3-research-manager
   http_proxy: ""
   https_proxy: ""
-  no_proxy: circle1-port-owncloud,circle1-port-zenodo,circle1-port-openscienceframework,circle1-port-datasafe,circle2-port-service,circle3-token-storage,circle3-research-manager
+  no_proxy: circle1-port-owncloud,circle1-port-zenodo,circle1-port-openscienceframework,circle1-port-datasafe,circle1-port-reva,circle2-port-service,circle3-token-storage,circle3-research-manager
