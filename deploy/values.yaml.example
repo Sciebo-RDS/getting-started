@@ -2,6 +2,13 @@ global:
   # will be used for ingress host
   # edit here if you changed it in create_certs.sh and wants to use another domain
   domain: rds.local
+layer0-describo:
+  enabled: true
+  image:
+    tag: main
+  environment:
+    RDS_INSTALLATION_DOMAIN: https://<your-rds-installation>
+    EMBED_MODE: true
 layer0-web:
   enabled: true
   image:
