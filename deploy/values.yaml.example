@@ -9,6 +9,12 @@ layer0-describo:
   environment:
     RDS_INSTALLATION_DOMAIN: https://<your-rds-installation>
     EMBED_MODE: true
+  postgresql:
+    postgresqlDatabase: "describo"
+    postgresqlUsername: "admin"
+    postgresqlPassword: "admin"
+    persistance:
+      storageClassName: cindergold-delete
 layer0-web:
   enabled: true
   image:
