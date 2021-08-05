@@ -34,8 +34,10 @@ dependencies_helm:
 install_configuration:
 	kubectl apply -f configmaps/mserviceurl.yaml
 	kubectl apply -f configuration.yaml
+	kubectl create configmap describo-configuration-file --from-file describo/configuration.json --from-file describo/type-definitions-lookup.json --from-file describo/type-definitions.json --from-file describo/nginx.conf
 
 uninstall_configuration:
+	kubectl delete configmap describo-configuration-file
 	kubectl delete -f configuration.yaml
 	kubectl delete -f configmaps/mserviceurl.yaml
 
