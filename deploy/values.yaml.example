@@ -2,6 +2,9 @@ global:
   # will be used for ingress host
   # edit here if you changed it in create_certs.sh and wants to use another domain
   domain: rds.local
+  ingress:
+    tls:
+      secretName: sciebords-tls-public
 
 # Set this to DEBUG and restart your applications to get more informations in logs. Default: INFO
 loglevel: INFO
